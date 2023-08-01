@@ -12,6 +12,20 @@ import Cart from "../Cart/Cart";
 import "./Header.scss";
 
 const Header = () => {
+
+    const handleScroll = () =>{
+        const offset  = window.scrollY;
+        console.log(offset);
+        if (offset > 200) {
+
+        }
+    };
+
+    useEffect(() => {
+        //console.log("UseEffect")
+        window.addEventListener("scroll", handleScroll)
+    }, []);
+
     return <header className="main-header">
         <div className="header-content">
             <ul className="left">
