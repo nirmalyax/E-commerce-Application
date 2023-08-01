@@ -20,7 +20,13 @@ const Header = () => {
                 <li>Categories</li>
             </ul>
             <div className="center">E-kart.</div>
-            <div className="right"></div>
+            <div className="right">
+                <TbSearch />
+                <AiOutlineHeart />
+                <span className="cart-icon">
+                    <CgShoppingCart />
+                </span>
+            </div>
         </div>
     </header>;
 };
