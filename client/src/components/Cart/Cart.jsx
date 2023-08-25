@@ -9,6 +9,7 @@ import { makePaymentRequest } from "../../utils/api";
 import "./Cart.scss";
 
 const Cart = () => {
+    
     const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
 
     const stripePromise = loadStripe(
